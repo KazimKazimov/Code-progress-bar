@@ -50,7 +50,7 @@ def demo_progress_bar():
 
     tickets = list(range(1, 81))  # pretend these are ticket IDs
 
-    with Progress(
+    with Progress( 
         SpinnerColumn(),
         TextColumn("[bold blue]{task.description}"),
         BarColumn(bar_width=40),
